@@ -15,7 +15,7 @@
 $(document).ready(function () {
 $.ajax({
     type: "GET",
-    url: "books.xml",
+    url: "http://kjelenak.co.in.hostinghood.com/books.xml",
     dataType: "xml",
     success: xmlParser
    });
@@ -28,8 +28,7 @@ $('#load').fadeOut();
 $(xml).find("Book").each(function () {
 
     $(".main").append('<div class="book"><div class="title">' + $(this).find("Title").text() +   '</div><div class="description">' + $(this).find("Description").text() + '</div><div   class="date">Published ' + $(this).find("Date").text() + '</div></div>');
-    $("#load").append($(this).attr("Description") + "<br />");
-    $("#images").append('<a href="' + $(this).find("Description").text() + '"></a>');
+    $("#images").append('<img src="' + $(this).find("Description").text() + '" />');
     $(".book").fadeIn(1000);
 
  });
@@ -40,9 +39,10 @@ $(xml).find("Book").each(function () {
 
 <body>
 <div class="main">
-<div id="images"></div>
-<div align="center" class="loader"><img src="loader.gif" id="load" width="16" height="11"   align="absmiddle"/></div>
+
+<div align="center" class="loader"><img src="dev.jpg" id="load" width="16" height="11"   align="absmiddle"/></div>
 </div>
+<div id="images"></div>
 
  <div class="clear"></div>
  <footer id="footer">
