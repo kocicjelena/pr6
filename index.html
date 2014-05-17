@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
-	<title></title>
+	<title>responsive, ajax img, swipe</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" href="style1.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
 	<script type="text/javascript" src="scriptjson.js"></script>
 	<script type="text/javascript" src="2.js"></script>
 	<script type="text/javascript" src="3.js"></script>
@@ -28,7 +28,7 @@ $('#load').fadeOut();
 $(xml).find("Book").each(function () {
 
     $(".main").append('<div class="book"><div class="title">' + $(this).find("Title").text() +   '</div><div class="description">' + $(this).find("Description").text() + '</div><div   class="date">Published ' + $(this).find("Date").text() + '</div></div>');
-    $("#images").append('<img src="' + $(this).find("Description").text() + '" />');
+    $("#images").append('<img src=' + $(this).find("Description").text() + ' />');
     $(".book").fadeIn(1000);
 
  });
@@ -38,14 +38,20 @@ $(xml).find("Book").each(function () {
 </head>
 
 <body>
+<header>
+	<strong>header:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+<ul><li>asf</li><li>asf</li><li>asf</li><li>asf</li><li>asf</li></ul>
+	<div id="div1">gagas</div>
+<div id="div2"><div id="images"></div></div>
+	</header>
 <div class="main">
 
 <div align="center" class="loader"><img src="dev.jpg" id="load" width="16" height="11"   align="absmiddle"/></div>
 </div>
-<div id="images"></div>
+
 
  <div class="clear"></div>
- <img src="https://www.dropbox.com/s/gslaewzbnv6o9jy/most.JPG" id="load" width="16" height="11"   align="absmiddle"/>
+ <!-- <img src="https://www.dropbox.com/s/gslaewzbnv6o9jy/most.JPG" id="load" width="16" height="11"   align="absmiddle"/>-->
  <footer id="footer">
 	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
 </footer><!-- #footer -->
