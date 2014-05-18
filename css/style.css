@@ -109,7 +109,7 @@ header {
   background-color: aqua;
 }
 #images {
-  float: right;
+  float: left;
 }
 #images2 {
   display: inline-block; 
