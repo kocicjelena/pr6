@@ -78,15 +78,27 @@ header {
 	position: absolute;
 }
 .module {
-  background: white;
+  background: black;
   border: 1px solid #ccc;
   margin: 0%;
   > h2 {
     padding: 0rem;
     margin: 0 0 0.5rem 0;
+	
   }
   > p {
     padding: 0 1rem;
+	background: BLACK;
+  }
+  > table{padding: 0 1rem; background: PURPLE;}
+  > div {padding: 0 1rem; background: PURPLE;}
+  @media only screen and (max-width: 680px) {
+    width:40% !important;
+    height:50%;
+  }
+  @media only screen and (max-width: 320px) {
+    width:40% !important;
+    height:50%;
   }
 }
 
@@ -114,10 +126,10 @@ header {
   }
 }
 .two-col {
-  width: 320px;
+  width: 100%;
    background: #993366;
-  @media only screen and (max-width: 480px) {
-    width:100% !important;
+  @media only screen and (max-width: 320px) {
+    width:50% !important;
     height:auto;
   }
 }
@@ -247,17 +259,16 @@ footer {
 	bottom: 0;
     width: 100%;
     background: #C0C0C0;
-    height: 200px;
+    height: auto;
 	position: absolute;
 	margin: 10;
 	padding: 10;
 	
 }
 footer .leftColumn {  float: left;
-    width: 50%;  }
-
+    width: 50%; padding: 1.25em; margin-bottom: .5em; }
 footer .rightColumn { float: right;
-    width: 50%; }
+    width: 50%; padding: 1.25em;}
 .sid {
 		width: 0%;
 		visibility:none;
@@ -288,7 +299,7 @@ footer .rightColumn { float: right;
 		padding: 8% 7%;
 		margin-bottom: 10px;
 	}
-
+footer {font-size: 70%}
 
 }
 
@@ -346,6 +357,7 @@ smaller than 650
 		padding: 3% 4%;
 		margin: 0 0 10px;
 	}
+	footer {font-size: 50%}
 
 }
 
@@ -362,6 +374,7 @@ smaller than 560
 		width: 100%;
 		visibility:show;
 	}
+	footer {font-size: 30%}
 	.sidh {
 		
 		width: 100%;
@@ -392,6 +405,9 @@ smaller than 560
 	
 
 }
+footer.leftColumn { }
+
+footer.rightColumn { float: none; width: auto; }
 #nav{}
 .menuone{visibility:show;top: 0;
     right: 0%;}
@@ -404,8 +420,8 @@ smaller than 560
 
     ul.egmenu li.tap { background: #555;  }
     ul.egmenu li.tap ul { display: block;  }
-}
 
+footer {font-size: 20%}
 	}
 @media all and (min-width: 481px) {
     ul.egmenu li:hover { background: #555;  }
