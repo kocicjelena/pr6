@@ -104,12 +104,11 @@ header {
 #parent {
   border-style: dashed;
   border-width: 1px;
-  padding: 25px;
+  padding: 5px;
   display:inline-block;
   background-color: #330033;
 }
 #images {
-  float: left;
 }
 #images2 {
   display: inline-block; 
