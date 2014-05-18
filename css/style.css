@@ -25,10 +25,6 @@ body {
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 	-webkit-text-size-adjust: none;
 }
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 .sidh {
 		
 		width: 0%;
@@ -67,59 +63,80 @@ body {
   color: black;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-#header {
-	background: Yellow;
-	margin: 10px 10px 10px;
-	padding: 35px 55px;
-    width: 95%;
-	padding-top: 3px;
-    height: 150px;
+  img {
+	max-width: 37.5%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+header {
+	background: black;
+	display: block;
+    width: 100%;
+	padding-top: 0px;
+    height: auto;
 	position: absolute;
 }
-#header ul{
+header ul{
     display: inline-block;
-	position: relative;
-	height: 260px;
+	position: absolute;
+	height: auto;
 	float: left;
 }
-#header ul li{
+header ul li{
 	padding-left:14px;
        list-style-type:none;
         margin-left:0cm;
-	border-style:dotted; 
 	margin: 10;
 	padding: 10;
 	color: black;
 	float: left;
-	position: relative;
+	position: absolute;
 }
-#header #div1{
-	background: Yellow;
-	position: relative;
+#div1{
+	background: #66CCCC;
+	width: 100%;
+    height: 300px;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+}
+#div2{
+	background: #993366;
+	width: 100%;
+	position: absolute;
 	height: 160px;
+	bottom: 260px;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
 }
-#header #div2{
-	background: Orange;
-	position: relative;
-	height: 160px;
+#div3{
+	background: #6600CC;
+	width: 100%;
+	position: absolute;
+	height: 260px;
+	bottom: auto;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
 }
-#container{
+#div2 #container{
     float: right;
 
 	
+	width: 65.9375%;	/* 633px / 960px */
 	margin: 0;
 	padding: 0;
 	position: relative;
 
 }
 #sideLeft
-{
+{   background: black;
 	margin: 0;
 	padding: 0;
 	top: 200px;
 	width: 260px;
 	float: left;
-	background: #00CCFF;
 	position: absolute;
 }
 #wrapper{
@@ -149,15 +166,25 @@ body {
 	float: right;
 }
 
-#footer {
+#navlist{position:relative;}
+#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#navlist li, #navlist a{height:44px;display:block;}
+
+#next{left:129px;width:43px;}
+footer {
     
 	bottom: 0;
     width: 100%;
-    background: #66CC66;
-    height: 160px;
+    background: #C0C0C0;
+    height: auto;
 	position: absolute;
 	
 }
+footer .leftColumn {  float: left;
+    width: 50%;  }
+
+footer .rightColumn { float: right;
+    width: 50%; }
 .sid {
 		width: 0%;
 		visibility:none;
@@ -198,7 +225,7 @@ smaller than 650
 @media screen and (max-width: 650px) {
 
 	/* header */
-	#header {
+	header {
 		height: auto;
 	}
 	.sidh {
@@ -292,5 +319,21 @@ smaller than 560
 	
 
 }
-
+header ul{
+	position: absolute;
+	height: auto;
+	float: left;
+	margin:0;
+    padding:0;
+}
+header ul li{
+	padding-left:14px;
+       list-style-type:none;
+        margin-left:0cm;
+	margin: 10;
+	padding: 10;
+	color: white;
+	float: left;
+	position: absolute;
+}}
 
