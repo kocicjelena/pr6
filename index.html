@@ -34,9 +34,9 @@ function xmlParser(xml) {
 
 $(xml).find("Book").each(function () {
 
-   $("#images").append('<img src="' + $(this).find("1").text() + '" />');
-	 $("#images2").append('<img src="' + $(this).find("2").text() + '" />');
-	  $("#images3").append('<img src="' + $(this).find("3").text() + '" />');
+   $("#images").append('<img src="' + $(this).find("one").text() + '" />');
+	 $("#images2").append('<img src="' + $(this).find("tw").text() + '" />');
+	  $("#images3").append('<img src="' + $(this).find("t").text() + '" />');
 
 
  });

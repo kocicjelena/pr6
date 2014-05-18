@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
     <RecentBooks>
     <Book>
-    <1>lj.jpg</1>
-    <2>most.jpg</2>
-     <3>dev.jpg</3>
+    <one>lj.jpg</one>
+    <tw>most.jpg</tw>
+     <t>dev.jpg</t>
      </Book>
 	  <Book>
-    <1>lj.jpg</1>
-    <2>most.jpg</2>
-     <3>dev.jpg</3>
+    <one>lj.jpg</one>
+    <tw>most.jpg</tw>
+     <t>dev.jpg</t>
      </Book>
 </RecentBooks>
