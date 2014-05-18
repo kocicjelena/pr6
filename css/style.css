@@ -101,12 +101,12 @@ header {
     height:50%;
   }
 }
-.parent {
+#parent {
   border-style: dashed;
   border-width: 1px;
   padding: 25px;
   display:inline-block;
-  background-color: aqua;
+  background-color: #330033;
 }
 #images {
   float: left;
