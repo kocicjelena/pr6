@@ -107,8 +107,10 @@ header {
   padding: 5px;
   display:inline-block;
   background-color: #330033;
+  float: right;
 }
 #images {
+float: left;
 }
 #images2 {
   display: inline-block; 
@@ -377,6 +379,14 @@ smaller than 650
 	footer {position:fixed;
    left:0px;
    bottom:0px;font-size: 50%}
+   #images2 {
+		width: 0%;
+		visibility:none;
+	}
+	#images3 {
+		width: 0%;
+		visibility:none;
+	}
 
 }
 
@@ -443,8 +453,24 @@ footer.rightColumn { float: none; width: auto; }
     footer {position:fixed;
    left:0px;
    bottom:0px;font-size: 20%}
+   #images2 {
+		width: 0%;
+		visibility:none;
+	}
+	#images3 {
+		width: 0%;
+		visibility:none;
+	}
 	}
 @media all and (min-width: 481px) {
     ul.egmenu li:hover { background: #555;  }
     ul.egmenu li:hover ul { display: block;  }
+	#images2 {
+		width: 0%;
+		visibility:none;
+	}
+	#images3 {
+		width: 0%;
+		visibility:none;
+	}
 }
