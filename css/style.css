@@ -90,7 +90,7 @@ header {
 	background: BLACK;
 	text-align: right;
   }
-  > div{padding: 0 1rem; display:inline-block;float:left; background: PURPLE;}
+  > div{padding: 0 1rem; display:inline-block; float:left; background: PURPLE;}
   > footer{padding: 0 1rem;}
   @media only screen and (max-width: 680px) {
     width:70% !important;
@@ -110,15 +110,15 @@ header {
 }
 #images {
   float: left;
-   width: 100%;
+   width: 33%;
 }
 #images2 {
   display: inline-block; 
-   width: 100%;
+   width: 33%;
 }
 #images3 {
   display: inline-block; 
-   width: 100%;
+   width: 33%;
 }
 .clearBoth { clear:both; }
 .stripe-2 {
