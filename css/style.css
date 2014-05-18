@@ -463,12 +463,4 @@ footer.rightColumn { float: none; width: auto; }
 @media all and (min-width: 481px) {
     ul.egmenu li:hover { background: #555;  }
     ul.egmenu li:hover ul { display: block;  }
-	#images2 {
-		width: 0%;
-		visibility:none;
-	}
-	#images3 {
-		width: 0%;
-		visibility:none;
-	}
 }
