@@ -109,13 +109,15 @@ header {
   background-color: aqua;
 }
 #images {
-  float: left;
+  float: right;
 }
 #images2 {
   display: inline-block; 
+  float: right;
 }
 #images3 {
   display: inline-block; 
+  float: right;
 }
 .clearBoth { clear:both; }
 .stripe-2 {
