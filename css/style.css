@@ -65,7 +65,7 @@ body {
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 img {
-	max-width: 37.5%;
+	max-width: 100%;
 	height: auto;
 	width: auto\9; /* ie8 */
 }
@@ -93,7 +93,7 @@ header {
   }
   > table{padding: 0 1rem; background: PURPLE;}
   > div{padding: 0 1rem; display:inline-block; float:left;}
-
+  > footer{padding: 0 1rem;}
   @media only screen and (max-width: 680px) {
     width:40% !important;
     height:50%;
