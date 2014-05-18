@@ -316,7 +316,7 @@ footer .rightColumn { float: right;
 		padding: 8% 7%;
 		margin-bottom: 10px;
 	}
-footer {position:fixed;
+    footer {position:fixed;
    left:0px;
    bottom:0px;font-size: 70%}
    
@@ -379,14 +379,6 @@ smaller than 650
 	footer {position:fixed;
    left:0px;
    bottom:0px;font-size: 50%}
-   #images2 {
-		width: 0%;
-		visibility:none;
-	}
-	#images3 {
-		width: 0%;
-		visibility:none;
-	}
 
 }
 
