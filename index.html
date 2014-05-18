@@ -33,7 +33,8 @@ function xmlParser(xml) {
 
 
 $(xml).find("Book").each(function () {
-
+ $(".main").append('<div class="book"><div class="title">' + $(this).find("one").text() +   '</div><div class="tw">' + $(this).find("tw").text() + '</div><div   class="date">Published ' + $(this).find("t").text() + '</div></div>');
+    
    $("#images").append('<img src="' + $(this).find("one").text() + '" />');
 	 $("#images2").append('<img src="' + $(this).find("tw").text() + '" />');
 	  $("#images3").append('<img src="' + $(this).find("t").text() + '" />');
@@ -65,7 +66,7 @@ $(xml).find("Book").each(function () {
 	</header>
 	
 	
-	
+	<div class="main"></div>
 	
 
 	
