@@ -89,6 +89,7 @@ header {
   > p {
     padding: 0 1rem;
 	background: BLACK;
+	text-align: right;
   }
   > table{padding: 0 1rem; background: PURPLE;}
   > div {padding: 0 1rem; background: PURPLE;}
