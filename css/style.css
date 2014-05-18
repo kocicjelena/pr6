@@ -94,6 +94,7 @@ header ul li{
 }
 #div1{
 	background: #66CCCC;
+	display: block;
 	width: 100%;
     height: 300px;
 	-moz-transition: 0.2s color linear;
@@ -102,9 +103,10 @@ header ul li{
 }
 #div2{
 	background: #993366;
+	display: block;
 	width: 100%;
 	position: absolute;
-	height: 160px;
+	height: 100px;
 	bottom: 260px;
 	-moz-transition: 0.2s color linear;
 	-webkit-transition: 0.2s color linear;
@@ -115,28 +117,20 @@ header ul li{
 	width: 100%;
 	position: absolute;
 	height: 260px;
-	bottom: auto;
-	-moz-transition: 0.2s color linear;
-	-webkit-transition: 0.2s color linear;
-	transition: 0.2s color linear;
+	bottom: 200;
 }
-#div2 #container{
-    float: right;
-
-	
-	width: 65.9375%;	/* 633px / 960px */
+#div2#container{
+    width: 100%;	/* 633px / 960px */
 	margin: 0;
 	padding: 0;
-	position: relative;
+	position: absolute;
 
 }
-#sideLeft
+#div2#sideLeft
 {   background: black;
+    float: right;
 	margin: 0;
 	padding: 0;
-	top: 200px;
-	width: 260px;
-	float: left;
 	position: absolute;
 }
 #wrapper{
@@ -176,7 +170,7 @@ footer {
 	bottom: 0;
     width: 100%;
     background: #C0C0C0;
-    height: auto;
+    height: 200px;
 	position: absolute;
 	
 }
