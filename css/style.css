@@ -110,15 +110,15 @@ header {
 }
 #images {
   float: left;
-   width: 33%;
+   width: 37%;
 }
 #images2 {
   display: inline-block; 
-   width: 33%;
+   width: 37%;
 }
 #images3 {
   display: inline-block; 
-   width: 33%;
+   width: 37%;
 }
 .clearBoth { clear:both; }
 .stripe-2 {
