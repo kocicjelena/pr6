@@ -92,8 +92,8 @@ header {
 	text-align: right;
   }
   > table{padding: 0 1rem; background: PURPLE;}
-  > div.inline {padding: 0 1rem; float:left;}
-  > .clearBoth { clear:both; }
+  > div{padding: 0 1rem; display:inline-block; float:left;}
+
   @media only screen and (max-width: 680px) {
     width:40% !important;
     height:50%;
@@ -103,7 +103,24 @@ header {
     height:50%;
   }
 }
-
+.parent {
+  border-style: dashed;
+  border-width: 1px;
+  padding: 25px;
+  display:inline-block;
+  background-color: aqua;
+}
+.images {
+  float: left;
+}
+.images2 {
+  display: inline-block;    
+}
+.images3 {
+  display: inline-block;
+  background-color: green;    
+}
+.clearBoth { clear:both; }
 .stripe-2 {
   color: black;
   background: repeating-linear-gradient(
