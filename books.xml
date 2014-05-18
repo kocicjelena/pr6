@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
     <RecentBooks>
     <Book>
-    <Title>lj.jpg</Title>
-    <Description>"http://kocicjelena.github.io/pr6/most.JPG/lj.jpg"</Description>
-     <Date>6/2/2010</Date>
+    <1>lj.jpg</1>
+    <2>most.jpg</2>
+     <3>dev.jpg</3>
      </Book>
-	 <Book>
-      <Title>most.jpg</Title>
-    <Description>"http://kocicjelena.github.io/pr6/most.JPG"</Description>
-    <Date>12/1/2010</Date>
-    </Book>
-    <Book>
-     <Title>dev.jpg</Title>
-    <Description>"http://kocicjelena.github.io/pr6/most.JPG/dev.JPG"</Description>
-    <Date>4/1/2010</Date>
-    </Book>
+	  <Book>
+    <1>lj.jpg</1>
+    <2>most.jpg</2>
+     <3>dev.jpg</3>
+     </Book>
 </RecentBooks>

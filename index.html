@@ -31,13 +31,13 @@ $.ajax({
 
 function xmlParser(xml) {
 
-$('#div3').fadeOut();
 
 $(xml).find("Book").each(function () {
 
-    $(".main").append('<div class="book"><div class="title">' + $(this).find("Title").text() +   '</div><div class="description">' + $(this).find("Description").text() + '</div><div   class="date">Published ' + $(this).find("Date").text() + '</div></div>');
-    $("#images").append('<img src="' + $(this).find("Title").text() + '" />');
-    $(".book").fadeIn(1000);
+   $("#images").append('<img src="' + $(this).find("1").text() + '" />');
+	 $("#images2").append('<img src="' + $(this).find("2").text() + '" />');
+	  $("#images3").append('<img src="' + $(this).find("3").text() + '" />');
+
 
  });
 
@@ -95,7 +95,7 @@ $(xml).find("Book").each(function () {
 		    <div class="menu-button one-page">::</div>
 						
 
-	</div><div id="images"></div>
+	</div><div id="images"></div></div><div id="images2"></div></div><div id="images3"></div>
 <div id="div3">
 			<div id="images"></div></div>
 
