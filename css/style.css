@@ -274,14 +274,14 @@ ul.egmenu li:hover ul { display: block;  }
 
 #next{left:129px;width:43px;}
 footer {
-    
+    position:fixed;
+   left:0px;
 	bottom: 0;
     width: 100%;
     background: #C0C0C0;
     height: auto;
-	position: absolute;
-	margin: 10;
-	padding: 10;
+	margin: 0;
+	padding: 0;
 	
 }
 footer .leftColumn {  float: left;
@@ -318,8 +318,14 @@ footer .rightColumn { float: right;
 		padding: 8% 7%;
 		margin-bottom: 10px;
 	}
-footer {font-size: 70%}
-
+footer {position:fixed;
+   left:0px;
+   bottom:0px;font-size: 70%}
+    img {
+	max-width: 90%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
 }
 
 /************************************************************************************
@@ -376,7 +382,14 @@ smaller than 650
 		padding: 3% 4%;
 		margin: 0 0 10px;
 	}
-	footer {font-size: 50%}
+	footer {position:fixed;
+   left:0px;
+   bottom:0px;font-size: 50%}
+	img {
+	max-width: 60%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
 
 }
 
@@ -440,9 +453,21 @@ footer.rightColumn { float: none; width: auto; }
     ul.egmenu li.tap { background: #555;  }
     ul.egmenu li.tap ul { display: block;  }
 
-footer {font-size: 20%}
+    footer {position:fixed;
+   left:0px;
+   bottom:0px;font-size: 20%}
+    img {
+	max-width: 40%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
 	}
 @media all and (min-width: 481px) {
     ul.egmenu li:hover { background: #555;  }
     ul.egmenu li:hover ul { display: block;  }
+}
+img {
+	max-width: 30%;
+	height: auto;
+	width: auto\9; /* ie8 */
 }
