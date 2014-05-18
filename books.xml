@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
     <RecentBooks>
     <Book>
-    <one>dev.jpg</one>
-    <tw>most.jpg</tw>
+    <one>images/dev.jpg</one>
+    <tw>images/most.jpg</tw>
      <t>lj.jpg</t>
      </Book>
 </RecentBooks>
