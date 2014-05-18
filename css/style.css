@@ -109,6 +109,12 @@ header {
   background-color: #330033;
   float: right;
 }
+#parent2 {
+  border-width: 0;
+  padding: 5px;
+  display:inline-block;
+  background-color: #6600FF;
+}
 #images {
 float: left;
 }
