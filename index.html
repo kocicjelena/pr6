@@ -58,6 +58,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display: block;
 }
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: 
+  border-box; 
+  box-sizing: border-box;
+  }
 body { line-height:1; }
 ol,ul { list-style:none; }
 blockquote,q { quotes:none; }
@@ -114,10 +120,6 @@ img {
 }
 .intro,
 .main,
-.footer {
-	float: right;
-	width: 65.9375%;	/* 633px / 960px */
-}
 .intro {
 	margin-top: 117px;
 }
@@ -212,13 +214,14 @@ li#f-winter {
 	-moz-transition: 0.2s color linear;
 	-webkit-transition: 0.2s color linear;
 	transition: 0.2s color linear;
+	width: 65.9375%;	/* 633px / 960px */
 }
 #pagewrap {
 	width: 100%;
 	margin: 0 auto;
 }
 
-#header {
+header {
 	background: black;
     width: 100%;
 	top: 0;
@@ -227,7 +230,7 @@ li#f-winter {
 }
 header ul{
     display: inline-block;
-	position: relative;
+	position: absolute;
 	height: auto;
 	float: left;
 	border-top: 1px solid #888583;
@@ -241,7 +244,7 @@ header ul li{
 	padding: 10;
 	color: white;
 	float: left;
-	position: relative;
+	position: absolute;
 	text-align: center;
 }
 header ul li a:hover {
@@ -266,11 +269,6 @@ header ul li a:hover {
     width: 100%;
 	position: absolute;
 }
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-  background: Gray;
-  }
-
 .newspaper
 {
 margin: .5em;
@@ -304,7 +302,7 @@ line-height: 1.4;
 }
 @media screen and (max-width: 650px) {
 
-	#header {
+	header {
 		height: auto;
 	}
 
@@ -346,6 +344,21 @@ line-height: 1.4;
         float: none;
         width: auto;
     }
+	header ul{
+	position: relative;
+	height: 260px;
+	float: left;
+}
+header ul li{
+	padding-left:14px;
+       list-style-type:none;
+        margin-left:0cm;
+	margin: 10;
+	padding: 10;
+	color: white;
+	float: left;
+	position: relative;
+}
 
 }
 </style>
@@ -353,19 +366,18 @@ line-height: 1.4;
 </head>
 
 <body>
-<div id="pagewrap">
-<header id="header">
+<header>
 
 	
 
-		<nav>
-			<ul id="main-nav">
+
+			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Home</a></li>
 			</ul>
-		</nav>
+	
 
 		
 
@@ -385,7 +397,7 @@ line-height: 1.4;
 
 
 	<div id="div1">Mus elit Morbi mus enim lacus at quis Nam eget morbi.</div>
-<div id="div2"><aside id="sidebar">
+<div id="div2">
 
 		<section class="widget">
 			 widget
@@ -396,7 +408,7 @@ line-height: 1.4;
 			 widget2
 		</section>
 						
-	</aside>
+
 	</div>
 <div id="div3"><div class="section main">
 			<h2><b>Victors <abbr class="amp" title="And">&amp;</abbr> Villains</b></h2>
@@ -405,14 +417,12 @@ line-height: 1.4;
 
  <!-- <img src="https://www.dropbox.com/s/gslaewzbnv6o9jy/most.JPG" id="load" width="16" height="11"   align="absmiddle"/>-->
 
-<footer id="footer">
+<footer>
 		footer <div class="newspaper">
         
       Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.Mus elit Morbi mus enim lacus at quis Nam eget morbi.
       </div>
 	</footer>
 	
-</div></div><!-- /end .inner -->
-</div>
 </body>
 </html>
